@@ -35,5 +35,5 @@ def turn (board)
     again = valid_move?(board, num)
     move(board, num)
     display_board(board)
-
+  end
 end
