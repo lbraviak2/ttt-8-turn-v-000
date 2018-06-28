@@ -25,6 +25,7 @@ def move(board, index, value = "X")
 end
 
 def turn (board)
+  board = [" ", " "," "," "," "," "," "," "," "]
   puts "Please enter 1-9:"
   index = gets.strip
   num = input_to_index(index)
