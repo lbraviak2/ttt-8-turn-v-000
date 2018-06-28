@@ -28,7 +28,7 @@ end
 
 def turn (board)
   again == false
-  while valid != true
+  while valid == false
     puts "Please enter 1-9:"
     index = gets.strip
     num = input_to_index(index)
