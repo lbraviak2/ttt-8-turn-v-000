@@ -21,6 +21,7 @@ def valid_move?(board, index)
   end
 end
 
+#if the index is valid then the system makes the move
 def move(board, index, value = "X")
 	board[index] = value
 end
@@ -29,7 +30,7 @@ def turn (board)
   puts "Please enter 1-9:"
   index = gets.strip
   num = input_to_index(index)
-  move(board, num)
   valid_move?(board, num)
+  move(board, num)
   display_board(board)
 end
