@@ -7,11 +7,12 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your input_to_index and move method here!
+# turns the users string input into an Integer
 def input_to_index(user_input)
   index = (Integer(user_input) rescue 0) - 1 #sets index to 0 is the user input is not a string
 end
 
+# this checks that the number collected is valid and the the space on the board picked is empty
 def valid_move?(board, index)
   if index > -1 && index < 9 && (board[index]==" " || board[index] == "")
     true
