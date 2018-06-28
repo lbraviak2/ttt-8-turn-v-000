@@ -18,12 +18,6 @@ def valid_move?(board, index)
   else
     false
   end
-
-  if board[index] == " " || board[index] == "" || board[index] == nil
-  		false
-  	else
-  		true
-  	end
 end
 
 def move(board, index, value = "X")
