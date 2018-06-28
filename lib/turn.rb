@@ -27,7 +27,7 @@ def move(board, index, value = "X")
 end
 
 def turn (board)
-  again == false
+  again = false
   while valid == false
     puts "Please enter 1-9:"
     index = gets.strip
